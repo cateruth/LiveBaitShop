@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coustard:wght@400;900&display=swap');
+/*
+        Author: Caitlin Gerard
+        Date: 07/15/2024
+        Assignment Name: Live Bait Website
+        Filename: style.css */
+        
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+video {
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -5;
+}
+h1, h2 {
+    font-family: "Satisfy", Georgia, 'Times New Roman', Times, serif;
+}
+h1{
+    line-height: 1.1;
+    color: white;
+    font-size: 80px;
+}
+h2 {
+    text-align: center;
+    font-size: xx-large;
+    line-height: 2;
+}
+p {
+    font-family: "Coustard", Georgia, 'Times New Roman', Times, serif;
+}
+.address {
+    text-align: center;
+    margin-top: 4%;
+}
+.name {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+}
+.icons img {
+    width: 50px;
+}
+
+.icons {
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: small;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    text-align: center;
+    max-width: 450px;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 50px 75px 50px 75px 50px 75px;
+    
+}
+
+.navbar {
+    overflow: hidden;
+    font-size: larger;
+    font-family: "Coustard", Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+    top: 0;
+    z-index: 100;
+    
+}
+
+.navbar a {
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    
+}
+.info {
+    background-color: white;
+    position: absolute;
+    justify-content: space-evenly;
+    top: 80px;
+    left: 10%;
+    width: 80%;
+    height: 75%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+footer {
+    font-family: "Coustard", Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+    top: 94%;
+    left: 45%;
+    color: white;
+}
+@media screen and (max-width: 550px) {
+    .p2 {
+        display: none;
+    }
+    .address {
+        margin-top: 15%;
+    }
+}
+@media screen and (max-width: 640px) {
+    .icons {
+        grid-template-columns: 40px 100px 40px 100px;
+        grid-gap: 0px;
+    }
+    .icons img {
+        width: 40px;
+    }
+}
+@media screen and (max-width: 728px) {
+    .info {
+        font-size: .9em;
+    }
+}
+@media screen and (max-width: 786px) {
+    .info {
+        height: 79%;
+    }
+    p {
+        font-size: .7em;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .icons {
+        margin-top: 1%;
+    }
+}
+
+@media screen and (max-width: 1110px) {
+    p {
+        font-size: .9em;
+    }
+}
